@@ -345,7 +345,6 @@
                         "caching": "ReadWrite",
                         "managedDisk": {
                             "storageAccountType": "Standard_LRS",
-                            "id": "[resourceId('Microsoft.Compute/disks', concat(parameters('virtualMachines_backendSERVER_name'), '_OsDisk_1_ef3ab3c577ea4dd5827852baae056008'))]"
                         },
                         "diskSizeGB": 127
                     },
@@ -354,6 +353,7 @@
                 "osProfile": {
                     "computerName": "[variables('backendserver')]",
                     "adminUsername": "beardmin",
+                    "adminPassword": "Testmihail123!!",
                     "windowsConfiguration": {
                         "provisionVMAgent": true,
                         "enableAutomaticUpdates": true
